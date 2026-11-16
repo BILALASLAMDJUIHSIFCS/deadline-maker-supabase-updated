@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="<!-- figma:lang -->" data-theme="ember">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Apply the saved theme before first paint so the page never flashes the default. -->
+    <script>
+      try {
+        var saved = JSON.parse(localStorage.getItem("deadline-maker:theme:v1") || "null");
+        if (saved && typeof saved.theme === "string") document.documentElement.dataset.theme = saved.theme;
+      } catch (e) {}
+    </script>
+    <title><!-- figma:title --></title>
+    <!-- figma:head-end -->
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
+</html>
